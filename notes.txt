@@ -1,0 +1,9 @@
+Typescript is not about reinventing JavaScript
+
+Typescript is just a way to write Javascript with a more precise manner
+
+TypeScript is all about "type safety nothing else" : 
+  Example: When we add 2 + "2" i.e we add string with a number, which in first case shouldn't be allowed gives a odd result of 22 (string). 
+  Some more example: 
+    - null + 2 = 2
+    - undefined + 2 = NaN
