@@ -1,0 +1,17 @@
+Types:
+
+- Numbers
+- Strings
+- Boolean
+- Null
+- Undefined
+- Void
+
+- Object
+- Array
+- Tuples
+
+- Any (intentially making code like JavaScript-ish)
+
+- Never
+- Unknown
