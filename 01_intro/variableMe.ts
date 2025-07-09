@@ -24,6 +24,14 @@ let userId: number = 334455
 let isLoggedIn: boolean = false
 
 
+let hero: string;
+
+function greetHero() {
+  // return false gives error
+  return "Thor"
+}
+
+hero = greetHero()
 
 
 export {}
