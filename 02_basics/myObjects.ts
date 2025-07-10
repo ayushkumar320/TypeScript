@@ -18,4 +18,18 @@ function createCourse(): {name: string, price:number} {
 
 createUser(newUser)
 
+// Aliases
+type User = {
+  name: string;
+  email: string;
+  isActive: boolean;
+}
+
+function createNewUser(user: User): User{
+  return {name: "", email: "", isActive: true}
+}
+
+createNewUser({name: "", email: "", isActive: true})
+
+
 export {}
