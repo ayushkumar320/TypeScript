@@ -20,16 +20,36 @@ createUser(newUser)
 
 // Aliases
 type User = {
+  readonly _id: string; // now no one can change the _id
   name: string;
   email: string;
   isActive: boolean;
+  credCardDetails?: number; // optional property
 }
 
 function createNewUser(user: User): User{
-  return {name: "", email: "", isActive: true}
+  return {_id: "", name: "", email: "", isActive: true}
 }
 
-createNewUser({name: "", email: "", isActive: true})
+createNewUser({_id: "001", name: "", email: "", isActive: true})
 
+
+type cardNumber = {
+  cardNumber: string;
+}
+
+type cardDate = {
+  cardDate: string;
+}
+
+type cvv = {
+  cvv: string;
+}
+
+type cardDetails = cardNumber & cardDate & cvv; // merging types
+
+function getCardDetails(card: cardDetails): cardDetails {
+  return {cardNumber: "", cardDate: "", cvv: ""}
+}
 
 export {}
