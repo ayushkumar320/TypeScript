@@ -51,6 +51,8 @@ const data3: (number | string)[] = [1, "2", 3, "4", 5]; // number | string array
 const data4: Array<number | string> = [1, "2", 3, "4", 5]; // Another way to define an array with union types
 
 let pi: 3.14 = 3.14; // Literal type, pi can only be 3.14
+pi = 3.14; // Valid assignment
+// pi = 3.14159; // This will cause a TypeScript error because pi can only be 3.14
 
 let seatAllotment: "aisle" | "middle" | "window"; // Literal type, seatAllotment can only be "aisle", "middle", or "window"
 
