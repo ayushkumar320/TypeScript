@@ -25,7 +25,7 @@ const hitesh: User = {
   startTrail: () => {
     return "Trail started";
   },
-  getCoupon: (name: string, off: number) => {
+  getCoupon: (name: string = "ayush", off: number = 10) => {
     return 10;
   }
 }
