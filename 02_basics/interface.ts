@@ -33,3 +33,6 @@ const hitesh: User = {
 hitesh.email = "h@hc.com"; // Allowed, as email is not readonly
 // hitesh.dbId = 33; // Error: Cannot assign to 'dbId' because it is a read-only property
 
+hitesh.startTrail = () => {
+  return "New Trail started";
+} // Allowed, as we are changing the method implementation
